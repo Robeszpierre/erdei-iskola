@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/Robeszpierre/erdei-iskola#readme",
   "devDependencies": {
-    "browser-sync": "^2.13.0"
+    "browser-sync": "^2.13.0",
+    "gulp-gh-pages": "^0.5.4"
   },
   "dependencies": {
     "gulp-sass": "^2.3.1"
