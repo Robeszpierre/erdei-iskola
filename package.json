@@ -1,0 +1,25 @@
+{
+  "name": "erdei-iskola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robeszpierre/erdei-iskola.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robeszpierre/erdei-iskola/issues"
+  },
+  "homepage": "https://github.com/Robeszpierre/erdei-iskola#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^2.3.1"
+  }
+}
