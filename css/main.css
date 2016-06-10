@@ -100,6 +100,9 @@ h2 {
   background-size: 100% 100%;
   min-height: 50vh;
   max-height: 80vh;
+  padding-top: 10vh;
+  justify-content: center;
+  font-size: 3em;
 }
 @media (min-width: 300px) {
   /* line 1, ../scss/Module/_header.scss */
@@ -160,10 +163,4 @@ h2 {
   .header {
     height: 640px;
   }
-}
-
-/* line 20, ../scss/Module/_header.scss */
-.header {
-  align-items: center;
-  justify-content: center;
 }
