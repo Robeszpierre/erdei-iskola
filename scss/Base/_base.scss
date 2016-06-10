@@ -1,4 +1,19 @@
-html{
+body{
   font-family: 'Noto Serif', serif;
-  background-color: #C2F5A9;
+  background-color: $base-color;
+  color: $font-color;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.8em;
+}
+
+h2{
+  font-size: 1.6em;
 }

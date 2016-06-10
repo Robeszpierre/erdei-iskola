@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background-image: $img-layer, url("../img/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+// background picture size
+@mixin imgHeight($width){
+    height: $width / 1.875;
+}
+@for  $i from 3 through 12 {
+  $width: $i * 100px;
+  @media(min-width: $width){
+    @include imgHeight($width);
+  }
+}
+min-height: 50vh;
+max-height: 80vh;
+}
+
+.header{
+  align-items: center;
+  justify-content: center;
+}
