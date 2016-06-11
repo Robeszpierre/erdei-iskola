@@ -3,7 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic);
-/* line 5, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,50 +24,57 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../usr/local/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 1, ../scss/Base/_base.scss */
+.summerCamp .description, .panel .summerCamp .description {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.panel .panel-header {
+  border-bottom: solid 3px #153306;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
 body {
   font-family: 'Noto Serif', serif;
   background-color: #C2F5A9;
@@ -77,90 +83,232 @@ body {
   box-sizing: border-box;
 }
 
-/* line 9, ../scss/Base/_base.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 13, ../scss/Base/_base.scss */
 h2 {
   font-size: 1.8em;
 }
 
-/* line 17, ../scss/Base/_base.scss */
 h2 {
   font-size: 1.6em;
 }
 
-/* line 1, ../scss/Module/_header.scss */
+a:link, a:visited {
+  color: #3a8e11;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: #153306;
+}
+
 .header {
-  display: flex;
-  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4)), url("../img/background2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   min-height: 50vh;
   max-height: 80vh;
   padding-top: 10vh;
   justify-content: center;
   font-size: 3em;
+  display: flex;
+  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4)), url("../img/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 @media (min-width: 300px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 160px;
   }
 }
 @media (min-width: 400px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 213.33333px;
   }
 }
 @media (min-width: 500px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 266.66667px;
   }
 }
 @media (min-width: 600px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 320px;
   }
 }
 @media (min-width: 700px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 373.33333px;
   }
 }
 @media (min-width: 800px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 426.66667px;
   }
 }
 @media (min-width: 900px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 480px;
   }
 }
 @media (min-width: 1000px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 533.33333px;
   }
 }
 @media (min-width: 1100px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 586.66667px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1, ../scss/Module/_header.scss */
   .header {
     height: 640px;
   }
 }
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-default, .dropdown-menu {
+  background-color: rgba(162, 240, 123, 0.8);
+  border-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-brand, .dropdown-menu .navbar-brand {
+  color: #3a8e11;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .dropdown-menu .navbar-brand:hover, .dropdown-menu .navbar-brand:focus {
+  color: #153306;
+}
+.navbar-default .navbar-text, .dropdown-menu .navbar-text {
+  color: #3a8e11;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .dropdown-menu > li > a, .dropdown-menu .navbar-nav > li > a, .dropdown-menu .dropdown-menu > li > a {
+  color: #3a8e11;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:focus, .dropdown-menu .navbar-nav > li > a:hover, .dropdown-menu .navbar-nav > li > a:focus, .dropdown-menu .dropdown-menu > li > a:hover, .dropdown-menu .dropdown-menu > li > a:focus {
+  color: #153306;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .dropdown-menu > .active > a, .navbar-default .dropdown-menu > .active > a:hover, .navbar-default .dropdown-menu > .active > a:focus, .dropdown-menu .navbar-nav > .active > a, .dropdown-menu .navbar-nav > .active > a:hover, .dropdown-menu .navbar-nav > .active > a:focus, .dropdown-menu .dropdown-menu > .active > a, .dropdown-menu .dropdown-menu > .active > a:hover, .dropdown-menu .dropdown-menu > .active > a:focus {
+  color: #153306;
+  background-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .dropdown-menu > .open > a, .navbar-default .dropdown-menu > .open > a:hover, .navbar-default .dropdown-menu > .open > a:focus, .dropdown-menu .navbar-nav > .open > a, .dropdown-menu .navbar-nav > .open > a:hover, .dropdown-menu .navbar-nav > .open > a:focus, .dropdown-menu .dropdown-menu > .open > a, .dropdown-menu .dropdown-menu > .open > a:hover, .dropdown-menu .dropdown-menu > .open > a:focus {
+  color: #153306;
+  background-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-toggle, .dropdown-menu .navbar-toggle {
+  border-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .dropdown-menu .navbar-toggle:hover, .dropdown-menu .navbar-toggle:focus {
+  background-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-toggle .icon-bar, .dropdown-menu .navbar-toggle .icon-bar {
+  background-color: #3a8e11;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form, .dropdown-menu .navbar-collapse,
+.dropdown-menu .navbar-form {
+  border-color: #3a8e11;
+}
+.navbar-default .dropdown-menu > li > a:hover, .dropdown-menu .dropdown-menu > li > a:hover {
+  background-color: rgba(129, 234, 78, 0.7);
+}
+.navbar-default .navbar-link, .dropdown-menu .navbar-link {
+  color: #3a8e11;
+}
+.navbar-default .navbar-link:hover, .dropdown-menu .navbar-link:hover {
+  color: #153306;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #3a8e11;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #153306;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #153306;
+    background-color: rgba(129, 234, 78, 0.7);
+  }
+}
+.summerCamp h2 {
+  font-size: 2.2em;
+  text-align: center;
+}
+.summerCamp .description {
+  margin-top: 2em;
+  background-color: rgba(162, 240, 123, 0.8);
+  text-align: justify;
+}
+.summerCamp .description span {
+  font-style: oblique;
+  font-size: 1.2em;
+  display: block;
+}
+
+.panel {
+  margin-top: 20px;
+  background-color: rgba(162, 240, 123, 0.8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: rgba(162, 240, 123, 0.8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.panel .panel-head {
+  text-align: center;
+}
+.panel .panel-head > a {
+  width: 100%;
+}
+.panel .panel-head > a .caret {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid;
+}
+.panel .summerCamp h2 {
+  padding-top: 0;
+  text-align: center;
+}
+.panel .summerCamp .description {
+  padding-top: 2em;
+  background-color: rgba(162, 240, 123, 0.8);
+  text-align: justify;
+}
+
+.panel-head {
+  text-align: center;
+}
+.panel-head > a {
+  width: 100%;
+}
+.panel-head > a .caret {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid;
+}
+
+.panel-body1 ul {
+  text-align: center;
+}
+.panel-body1 ul li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #3a8e11;
+}
+.panel-body1 ul li:nth-child(2n+1) {
+  background-color: rgba(129, 234, 78, 0.7);
+}
+
+b {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

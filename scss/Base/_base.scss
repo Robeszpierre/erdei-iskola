@@ -1,8 +1,10 @@
+@include establish-baseline($base-font-size);
+
 body{
   font-family: 'Noto Serif', serif;
   background-color: $base-color;
   color: $font-color;
-  font-size: 16px;
+  font-size: $base-font-size;
   box-sizing: border-box;
 }
 
@@ -16,4 +18,16 @@ h2{
 
 h2{
   font-size: 1.6em;
+}
+
+a:link, a:visited {
+    color: $colDefault;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  color: $colHighlight;
 }

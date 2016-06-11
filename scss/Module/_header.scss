@@ -1,4 +1,9 @@
 .header {
+  min-height: 50vh;
+  max-height: 80vh;
+  padding-top: 10vh;
+  justify-content: center;
+  font-size: 3em;
   display: flex;
   background-image: $img-layer, url("../img/background2.jpg");
   background-repeat: no-repeat;
@@ -13,9 +18,4 @@
     @include imgHeight($width);
   }
 }
-min-height: 50vh;
-max-height: 80vh;
-padding-top: 10vh;
-justify-content: center;
-font-size: 3em;
 }

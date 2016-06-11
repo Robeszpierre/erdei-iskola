@@ -5,8 +5,12 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import "compass/css3/images";
+@import "compass/typography";
+@import "compass/utilities/general/clearfix";
 @import "Base/typography";
 @import "Base/colors";
+@import "Base/placeholders";
 @import "Base/base";
 @import "Module/header";
+@import "Module/navbar";
+@import "Module/summerCamp";

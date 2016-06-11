@@ -1,0 +1,86 @@
+.summerCamp{
+  h2{
+    font-size: 2.2em;
+    text-align: center;
+  }
+  .description{
+
+    margin-top: 2em;
+    background-color: $bgDefault;
+    text-align: justify;
+    @extend %border-radius;
+      span {
+        font-style: oblique;
+        font-size: 1.2em;
+        display: block;
+      }
+  }
+}
+
+.panel {
+  margin-top: 20px;
+  background-color: $bgDefault;
+  @include border-radius(10px);
+  .panel-header {
+    @extend %border-bottom;
+  }
+.panel-head {
+  text-align: center;
+    >a {
+      width: 100%;
+      .caret {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid;
+      }
+    }
+}
+.summerCamp{
+  h2{ 
+    padding-top: 0;
+    text-align: center;
+  }
+  .description{
+    padding-top: 2em;
+    background-color: $bgDefault;
+    text-align: justify;
+    @extend %border-radius;
+  }
+}
+
+  margin-top: 20px;
+  background-color: $bgDefault;
+  @include border-radius(10px);
+  .panel-header {
+    @extend %border-bottom;
+  }
+}
+
+.panel-head {
+  text-align: center;
+    >a {
+      width: 100%;
+      .caret {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid;
+      }
+    }
+}
+
+.panel-body1{
+  ul{
+    text-align: center;
+    li{
+    padding: rem(8);
+    border-bottom: 1px solid $colDefault;
+      &:nth-child(2n+1){
+        background-color: $bgHighlight;
+      }
+}
+}
+}
+
+b {
+  font-weight: bold;
+}
