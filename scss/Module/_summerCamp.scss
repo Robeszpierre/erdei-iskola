@@ -1,5 +1,6 @@
 .summer-wrapper {
   background-image: $img-layer;
+  background-size: 100% 100%;
 }
 
 .summerCamp{
@@ -30,14 +31,14 @@
     @extend %border-bottom;
   }
 .panel-head {
-  text-align: center;
-    >a {
+      padding: 30px;
+      font-size: 2em;
+      text-align: center;
       width: 100%;
       .caret {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-top: 8px solid;
-      }
     }
 }
 .summerCamp{
@@ -61,18 +62,6 @@
   }
 }
 
-.panel-head {
-  text-align: center;
-    >a {
-      width: 100%;
-      .caret {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 8px solid;
-      }
-    }
-}
-
 .panel-body1{
   ul{
     text-align: center;
@@ -84,8 +73,4 @@
       }
 }
 }
-}
-
-b {
-  font-weight: bold;
 }

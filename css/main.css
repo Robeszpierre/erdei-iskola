@@ -243,6 +243,7 @@ b {
 }
 .summer-wrapper {
   background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
+  background-size: 100% 100%;
 }
 
 .summerCamp h2 {
@@ -274,12 +275,12 @@ b {
   border-radius: 10px;
 }
 .panel .panel-head {
+  padding: 30px;
+  font-size: 2em;
   text-align: center;
-}
-.panel .panel-head > a {
   width: 100%;
 }
-.panel .panel-head > a .caret {
+.panel .panel-head .caret {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid;
@@ -294,18 +295,6 @@ b {
   text-align: justify;
 }
 
-.panel-head {
-  text-align: center;
-}
-.panel-head > a {
-  width: 100%;
-}
-.panel-head > a .caret {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid;
-}
-
 .panel-body1 ul {
   text-align: center;
 }
@@ -315,10 +304,6 @@ b {
 }
 .panel-body1 ul li:nth-child(2n+1) {
   background-color: rgba(129, 234, 78, 0.7);
-}
-
-b {
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
