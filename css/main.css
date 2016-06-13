@@ -107,6 +107,10 @@ a:hover, a:active {
   color: #153306;
 }
 
+b {
+  font-weight: bold;
+}
+
 .header {
   min-height: 50vh;
   max-height: 80vh;
@@ -114,7 +118,8 @@ a:hover, a:active {
   justify-content: center;
   font-size: 3em;
   display: flex;
-  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4)), url("../img/background2.jpg");
+  line-height: 1em;
+  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -236,9 +241,14 @@ a:hover, a:active {
     background-color: rgba(129, 234, 78, 0.7);
   }
 }
+.summer-wrapper {
+  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
+}
+
 .summerCamp h2 {
   font-size: 2.2em;
   text-align: center;
+  padding-top: 1.5em;
 }
 .summerCamp .description {
   margin-top: 2em;

@@ -1,7 +1,12 @@
+.summer-wrapper {
+  background-image: $img-layer;
+}
+
 .summerCamp{
   h2{
     font-size: 2.2em;
     text-align: center;
+    padding-top: 1.5em;
   }
   .description{
 
@@ -36,7 +41,7 @@
     }
 }
 .summerCamp{
-  h2{ 
+  h2{
     padding-top: 0;
     text-align: center;
   }
