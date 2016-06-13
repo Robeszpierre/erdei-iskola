@@ -1,1 +1,1 @@
-$('.summer-wrapper').parallax({imageSrc: '../img/background2.jpg'});
+$('.summer-wrapper').parallax({imageSrc: 'img/background2.jpg'});
