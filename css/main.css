@@ -332,4 +332,19 @@ img {
   list-style-type: circle;
 }
 
+.tax {
+  padding: 0.9375rem;
+}
+.tax h3 {
+  margin-bottom: 0.625rem;
+  text-align: center;
+  font-weight: bold;
+}
+.tax p {
+  text-align: justify;
+}
+.tax m {
+  font-size: 2em;
+}
+
 /*# sourceMappingURL=main.css.map */

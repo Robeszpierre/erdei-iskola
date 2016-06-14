@@ -12,10 +12,10 @@
   p:first-child{
     padding-bottom: 1rem;
   }
-  &::first-line{
-    font-style: italic;
-    font-size: 1.2em;
-  }
+    &::first-line{
+      font-style: italic;
+      font-size: 1.2em;
+    }
 }
 .list-wrapper {
   background-color: $bgDefault;
