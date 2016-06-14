@@ -9,7 +9,10 @@
   @extend %border-radius;
   margin: 1rem auto;
   text-align: justify;
-  p:first-child::first-line{
+  p:first-child{
+    padding-bottom: 1rem;
+  }
+  &::first-line{
     font-style: italic;
     font-size: 1.2em;
   }

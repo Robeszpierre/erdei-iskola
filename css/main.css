@@ -310,7 +310,10 @@ img {
   margin: 1rem auto;
   text-align: justify;
 }
-.introduce .p-wrapper p:first-child::first-line {
+.introduce .p-wrapper p:first-child {
+  padding-bottom: 1rem;
+}
+.introduce .p-wrapper::first-line {
   font-style: italic;
   font-size: 1.2em;
 }
