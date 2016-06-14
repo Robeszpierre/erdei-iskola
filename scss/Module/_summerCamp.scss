@@ -1,5 +1,10 @@
+img{
+  background-size: 100% 100%;
+}
+
 .summer-wrapper {
   background-image: $img-layer;
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
@@ -7,10 +12,9 @@
   h2{
     font-size: 2.2em;
     text-align: center;
-    padding-top: 1.5em;
+    margin-top: 2rem;
   }
   .description{
-
     margin-top: 2em;
     background-color: $bgDefault;
     text-align: justify;
@@ -32,7 +36,7 @@
   }
 .panel-head {
       padding: 30px;
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center;
       width: 100%;
       .caret {
@@ -41,25 +45,6 @@
         border-top: 8px solid;
     }
 }
-.summerCamp{
-  h2{
-    padding-top: 0;
-    text-align: center;
-  }
-  .description{
-    padding-top: 2em;
-    background-color: $bgDefault;
-    text-align: justify;
-    @extend %border-radius;
-  }
-}
-
-  margin-top: 20px;
-  background-color: $bgDefault;
-  @include border-radius(10px);
-  .panel-header {
-    @extend %border-bottom;
-  }
 }
 
 .panel-body1{

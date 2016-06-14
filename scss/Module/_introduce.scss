@@ -1,0 +1,32 @@
+.parallax-window2{
+    background-image: $img-layer;
+}
+.introduce {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .p-wrapper {
+  background-color: $bgDefault;
+  @extend %border-radius;
+  margin: 1rem auto;
+  text-align: justify;
+  p:first-child::first-line{
+    font-style: italic;
+    font-size: 1.2em;
+  }
+}
+.list-wrapper {
+  background-color: $bgDefault;
+  @extend %border-radius;
+  margin-bottom: 2rem;
+  }
+h3 {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+ul {
+  margin: 1rem auto;
+  list-style-type: circle;
+}
+}

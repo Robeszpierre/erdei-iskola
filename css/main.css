@@ -59,7 +59,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-.summerCamp .description, .panel .summerCamp .description {
+.summerCamp .description, .introduce .p-wrapper, .introduce .list-wrapper {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -241,15 +241,20 @@ b {
     background-color: rgba(129, 234, 78, 0.7);
   }
 }
+img {
+  background-size: 100% 100%;
+}
+
 .summer-wrapper {
   background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .summerCamp h2 {
   font-size: 2.2em;
   text-align: center;
-  padding-top: 1.5em;
+  margin-top: 2rem;
 }
 .summerCamp .description {
   margin-top: 2em;
@@ -268,15 +273,10 @@ b {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  margin-top: 20px;
-  background-color: rgba(162, 240, 123, 0.8);
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
 }
 .panel .panel-head {
   padding: 30px;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   width: 100%;
 }
@@ -284,15 +284,6 @@ b {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid;
-}
-.panel .summerCamp h2 {
-  padding-top: 0;
-  text-align: center;
-}
-.panel .summerCamp .description {
-  padding-top: 2em;
-  background-color: rgba(162, 240, 123, 0.8);
-  text-align: justify;
 }
 
 .panel-body1 ul {
@@ -304,6 +295,38 @@ b {
 }
 .panel-body1 ul li:nth-child(2n+1) {
   background-color: rgba(129, 234, 78, 0.7);
+}
+
+.parallax-window2 {
+  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
+}
+
+.introduce {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.introduce .p-wrapper {
+  background-color: rgba(162, 240, 123, 0.8);
+  margin: 1rem auto;
+  text-align: justify;
+}
+.introduce .p-wrapper p:first-child::first-line {
+  font-style: italic;
+  font-size: 1.2em;
+}
+.introduce .list-wrapper {
+  background-color: rgba(162, 240, 123, 0.8);
+  margin-bottom: 2rem;
+}
+.introduce h3 {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+.introduce ul {
+  margin: 1rem auto;
+  list-style-type: circle;
 }
 
 /*# sourceMappingURL=main.css.map */
