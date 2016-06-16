@@ -76,6 +76,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Noto Serif', serif;
   background-color: #C2F5A9;
   color: #153306;
@@ -241,6 +242,10 @@ b {
     background-color: rgba(129, 234, 78, 0.7);
   }
 }
+.scroll-to-fixed-fixed {
+  background-color: #a2f07b;
+}
+
 img {
   background-size: 100% 100%;
 }
@@ -342,9 +347,6 @@ img {
 }
 .tax p {
   text-align: justify;
-}
-.tax m {
-  font-size: 2em;
 }
 
 /*# sourceMappingURL=main.css.map */

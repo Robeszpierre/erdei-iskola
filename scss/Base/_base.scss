@@ -1,6 +1,7 @@
 @include establish-baseline($base-font-size);
 
 body{
+  position: relative;
   font-family: 'Noto Serif', serif;
   background-color: $base-color;
   color: $font-color;
