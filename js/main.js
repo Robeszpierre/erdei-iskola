@@ -21,3 +21,21 @@ $('body').scrollspy({ target: '#navbar', offset: 51 });
                   $('body,html').stop().animate({scrollTop:posi},700);
                   return false;
               });
+
+              $.getJSON( "data/programs.json", function( data ) {
+                var items = [];
+                $.each( data, function( key, val ) {
+                  items.push( "<li>" + val + "</li>" );
+                });
+
+                $( "<ul/>", {
+                  "class": "my-new-list",
+                  html: items.join( "" )
+                }).appendTo( ".panel-body1" );
+              });
+
+$(".panel-head").click(function(){
+    $(".panel-body1").toggle(600, function(){
+        $(window).trigger('resize').trigger('scroll');
+    });
+});

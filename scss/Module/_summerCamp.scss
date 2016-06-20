@@ -34,6 +34,7 @@ img{
     @extend %border-bottom;
   }
 .panel-head {
+  cursor: pointer;
       padding: 30px;
       font-size: 1.5em;
       text-align: center;
@@ -47,6 +48,7 @@ img{
 }
 
 .panel-body1{
+  display: none;
   ul{
     text-align: center;
     li{
