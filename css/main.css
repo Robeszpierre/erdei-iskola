@@ -112,6 +112,10 @@ b {
   font-weight: bold;
 }
 
+i {
+  font-style: italic;
+}
+
 .header {
   min-height: 50vh;
   max-height: 80vh;
@@ -277,30 +281,31 @@ img {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-.panel .panel-head {
+.panel .panel-head, .panel .panel-head2 {
   cursor: pointer;
   padding: 30px;
   font-size: 1.5em;
   text-align: center;
   width: 100%;
 }
-.panel .panel-head .caret {
+.panel .panel-head .caret, .panel .panel-head2 .caret {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid;
 }
 
-.panel-body1 {
+.panel-body1, .panel-body2 {
   display: none;
 }
-.panel-body1 ul {
+.panel-body1 ul, .panel-body2 ul {
   text-align: center;
 }
-.panel-body1 ul li {
+.panel-body1 ul li, .panel-body2 ul li {
   padding: 0.5rem;
   border-bottom: 1px solid #3a8e11;
+  list-style: none;
 }
-.panel-body1 ul li:nth-child(2n+1) {
+.panel-body1 ul li:nth-child(2n+1), .panel-body2 ul li:nth-child(2n+1) {
   background-color: rgba(129, 234, 78, 0.7);
 }
 
@@ -328,15 +333,15 @@ img {
   background-color: rgba(162, 240, 123, 0.8);
   margin-bottom: 2rem;
 }
+.introduce .list-wrapper ul {
+  margin: 1rem auto;
+  list-style-type: circle;
+}
 .introduce h3 {
   padding-bottom: 1em;
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
-}
-.introduce ul {
-  margin: 1rem auto;
-  list-style-type: circle;
 }
 
 .tax {
@@ -371,6 +376,61 @@ img {
 #accessibility iframe {
   border: 5px solid #153306;
   border-radius: 5px;
+}
+
+.parallax-window4 {
+  background-image: linear-gradient(rgba(194, 245, 169, 0.4), rgba(194, 245, 169, 0.4));
+}
+
+.tradition {
+  text-align: center;
+  padding-top: 2rem;
+}
+.tradition p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+.tradition .tradition1, .tradition .tradition2 {
+  background-color: rgba(162, 240, 123, 0.8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.tradition .tradition1 p:last-child {
+  font-style: italic;
+}
+
+.panel-title {
+  background-color: rgba(162, 240, 123, 0.8);
+  text-align: center;
+}
+
+.panel-group {
+  text-align: justify;
+}
+
+.panel-default > .panel-heading {
+  background-color: rgba(129, 234, 78, 0.7);
+}
+
+.panel2 p {
+  margin-bottom: 1.25rem;
+}
+.panel2 h4 {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 0.625rem;
+}
+
+.panel3 ol {
+  margin-top: 0.625rem;
+  list-style: circle;
+  padding-left: 1.25rem;
+}
+.panel3 p {
+  margin-top: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,7 @@
 $('.parallax-window').parallax({imageSrc: 'img/background.jpg'});
 $('.parallax-window2').parallax({imageSrc: 'img/background2.jpg'});
 $('.parallax-window3').parallax({imageSrc: 'img/background3.jpg'});
+$('.parallax-window4').parallax({imageSrc: 'img/background4.jpg'});
 
 $('body').scrollspy({ target: '#navbar', offset: 51 });
 
@@ -27,15 +28,39 @@ $('body').scrollspy({ target: '#navbar', offset: 51 });
                 $.each( data, function( key, val ) {
                   items.push( "<li>" + val + "</li>" );
                 });
-
                 $( "<ul/>", {
                   "class": "my-new-list",
                   html: items.join( "" )
                 }).appendTo( ".panel-body1" );
               });
 
+              $.getJSON( "data/programs2.json", function( data ) {
+                var items = [];
+                $.each( data, function( key, val ) {
+                  items.push( "<li>" + val + "</li>" );
+                });
+                $( "<ul/>", {
+                  "class": "my-new-list",
+                  html: items.join( "" )
+                }).appendTo( ".panel-body2" );
+              });
+
 $(".panel-head").click(function(){
-    $(".panel-body1").toggle(600, function(){
+    $(".panel-body1").toggle(400, function(){
         $(window).trigger('resize').trigger('scroll');
     });
 });
+
+$(".panel-head2").click(function(){
+    $(".panel-body2").toggle(400, function(){
+        $(window).trigger('resize').trigger('scroll');
+    });
+});
+
+$('#collapseOne, #collapseTwo, #collapseThree').on('hidden.bs.collapse', function () {
+  $(window).trigger('resize').trigger('scroll');
+})
+
+$('#collapseOne, #collapseTwo, #collapseThree').on('shown.bs.collapse', function () {
+  $(window).trigger('resize').trigger('scroll');
+})

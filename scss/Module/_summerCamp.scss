@@ -33,7 +33,7 @@ img{
   .panel-header {
     @extend %border-bottom;
   }
-.panel-head {
+.panel-head, .panel-head2 {
   cursor: pointer;
       padding: 30px;
       font-size: 1.5em;
@@ -47,13 +47,14 @@ img{
 }
 }
 
-.panel-body1{
+.panel-body1, .panel-body2{
   display: none;
   ul{
     text-align: center;
     li{
     padding: rem(8);
     border-bottom: 1px solid $colDefault;
+    list-style: none;
       &:nth-child(2n+1){
         background-color: $bgHighlight;
       }
