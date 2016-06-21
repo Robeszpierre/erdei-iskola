@@ -64,3 +64,9 @@ $('#collapseOne, #collapseTwo, #collapseThree').on('hidden.bs.collapse', functio
 $('#collapseOne, #collapseTwo, #collapseThree').on('shown.bs.collapse', function () {
   $(window).trigger('resize').trigger('scroll');
 })
+
+$(".icon-facebook").hover(function(){
+  $(this).css("background-position", "0 -96px");
+}, function() {
+  $(this).css("background-position", "0 -64px");
+});
