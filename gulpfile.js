@@ -5,6 +5,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var compass = require('gulp-compass');
+var useref = require('gulp-useref');
 
 // Static Server + watching scss/html files
 gulp.task('serve', function() {
@@ -27,5 +28,7 @@ gulp.task('compass', function() {
     }))
     .pipe(gulp.dest('app/assets/temp'));
 });
+
+
 
 gulp.task('default', ['serve']);

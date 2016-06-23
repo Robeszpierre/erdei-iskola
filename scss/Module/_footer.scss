@@ -6,6 +6,7 @@ footer {
 }
 
 .social li {
+  font-size: 32px;
   display: inline-block;
   margin: 0 10px;
 }
@@ -23,4 +24,9 @@ footer {
 a.icon-facebook {
   padding: 0;
   background-position: 0 -64px;
+}
+
+.contact {
+  border-bottom: 1px solid $colHighlight;
+  font-size: rem(20);
 }

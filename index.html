@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erdei iskola</title>
+  <!-- build:css css/combined.css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
+<!-- endbuild -->
 </head>
 <body>
 
@@ -33,20 +34,21 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#introduce">Bemutatkozás</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kapcsolat<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#accessibility">Megközelíthetőség</a></li>
-              <li><a href="#contact">Elérhetőség</a></li>
-            </ul>
-          </li>
+
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programok<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#programs">Programjaink</a></li>
               <li><a href="#summerCamp">Nyári táborok</a></li>
-              <li><a href="#tradition">Hagyományörző napok</a></li>
               <li><a href="#discounts">Kedvezményes kirándulások</a></li>
+              <li><a href="#tradition">Hagyományörző napok</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kapcsolat<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#accessibility">Megközelíthetőség</a></li>
+              <li><a href="#contact">Elérhetőség</a></li>
             </ul>
           </li>
         </ul>
@@ -247,21 +249,24 @@
         <li><a href="https://www.facebook.com/szepalmaskerterdeiiskola.bakonyi" target="blank" class="icon-facebook">Facebook</a></li>
       </ul>
       <div class="col-md-6">
-      <p>Írjon nekünk:</p>
+      <p class="contact">Írjon nekünk</p>
       <p>bakonyierdeisuli@citromail.hu<a href="mailto:bakonyierdeisuli@citromail.hu" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></p>
       <p id="asdasd">lenart.jozsef2@citromail.hu<a href="mailto:lenart.jozsef2@citromail.hu" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></p>
       </div>
       <div class="col-md-6">
-        <p>Hívjon minket:</p>
-        <p>+36 30 855 53 31<a href="tel:+36308555331" target="_blank"><span class="glyphicon glyphicon-earphone"></span></a></p>
+        <p class="contact">Hívjon minket<br></p>
+        <p>+36 30 855 53 31<a href="tel:+36308555331" target="_blank"><span class="glyphicon glyphicon-earphone"></span></a><br></p>
         <p>+36 30 240 89 62<a href="tel:+36302408962" target="_blank"><span class="glyphicon glyphicon-earphone"></span></a></p>
       </div>
     </footer>
 
+<!-- build:js scripts/combined.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/scrolltofixed.min.js"></script>
+<script src="js/smoothScroll.js"></script>
 <script src="js/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>

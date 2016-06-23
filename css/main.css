@@ -249,6 +249,10 @@ i {
   background-color: #a2f07b;
 }
 
+.navbar-default .dropdown-menu > li {
+  background-color: #a2f07b;
+}
+
 img {
   background-size: 100% 100%;
 }
@@ -441,6 +445,7 @@ footer {
 }
 
 .social li {
+  font-size: 32px;
   display: inline-block;
   margin: 0 10px;
 }
@@ -458,6 +463,11 @@ footer {
 a.icon-facebook {
   padding: 0;
   background-position: 0 -64px;
+}
+
+.contact {
+  border-bottom: 1px solid #153306;
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

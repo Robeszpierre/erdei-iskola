@@ -60,3 +60,7 @@
 .scroll-to-fixed-fixed {
   background-color: darken($base-color, 10%);
 }
+
+.navbar-default .dropdown-menu > li {
+  background-color: darken($base-color, 10%);
+}
