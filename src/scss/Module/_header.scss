@@ -1,0 +1,21 @@
+.header {
+  min-height: 50vh;
+  max-height: 80vh;
+  padding-top: 10vh;
+  justify-content: center;
+  display: flex;
+  line-height: 1em;
+  background-image: $img-layer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+// background picture size
+@mixin imgHeight($width){
+    height: $width / 1.875;
+}
+@for  $i from 3 through 12 {
+  $width: $i * 100px;
+  @media(min-width: $width){
+    @include imgHeight($width);
+  }
+}
+}

@@ -1,0 +1,14 @@
+$base-font-size: 16px;
+
+@function rem($context) {
+  @return ($context / 16)+rem;
+}
+
+%border-radius {
+    @include border-radius(10px);
+    padding: 10px;
+}
+
+%border-bottom {
+  border-bottom: solid 3px $colHighlight;
+}
