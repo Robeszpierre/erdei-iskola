@@ -1,0 +1,42 @@
+@include establish-baseline($base-font-size);
+
+body{
+  position: relative;
+  font-family: 'Noto Serif', serif;
+  background-color: $base-color;
+  color: $font-color;
+  font-size: $base-font-size;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.2rem;
+}
+
+h3{
+  font-size: 1.5rem
+}
+
+a:link, a:visited {
+    color: $colDefault;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+  color: $colHighlight;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
+}
